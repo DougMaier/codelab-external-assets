@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>External Assets</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <!--
+    <style media="screen">
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 0em;
+      }
+      h2 {
+        font-size: 1.25em;
+        margin-bottom: 0em;
+      }
+    </style>
+  -->
+  </head>
+  <body>
+    <h1>Hey, let me tell you a joke!</h1>
+    <br>
+    <button id="jstestbutton" type="button" name="jsbutton_name">OK, tell me a Joke!</button>
+    <h2>Here comes the joke!</h2>
+    <p id="joketext">
+      Your new joke is awaiting you.
+    </p>
+    <script type="text/javascript">
+      /*
+        NOTE 1: Java Script Lint tools may raise a warning when semi-colons aren't used
+        at the end of the 2nd and 3rd lines.  We can ignore these warnings for
+        the time being.
+      */
+      /*
+        Note 2: The following is the 'corrected' version of the initial apporach with semi-colons
+        added at the end of the 2nd & 3rd lines of JavaScript.
+        document.getElementById('jstestbutton').onclick = function() {
+          document.getElementById('joketext').innerHTML = "Here's your new joke. (Isn't that funny!)";
+      */
+      /* Final version using Alert in place of .innerHTML */
+      document.getElementById('jstestbutton').onclick = function() {
+        alert("Here's your new joke. (Isn't that funny!)");
+      };
+    </script>
+  </body>
+</html>
