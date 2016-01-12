@@ -1,3 +1,3 @@
 document.getElementById('jstestbutton').onclick = function() {
-  alert("Here's your new joke. (Isn't that funny!)");
+  alert("Hey, I got you to click the button! (Isn't that funny!)");
 };
